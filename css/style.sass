@@ -355,17 +355,15 @@ section.video
 
 .videobox
     position: relative
+    border: 15px solid #000
+    border-radius: 15px
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2)
+    background-color: #242424
+    @include desk
+        border-radius: 10px
     video
         width: 100%
-        border: 15px solid #000
-        border-radius: 15px
-        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2)
-        background-color: #242424
         position: relative
-        @include desk
-            border-radius: 10px
-        @include pad
-            transform: rotate(0deg)
     .playBtn
         cursor: pointer
         position: absolute
